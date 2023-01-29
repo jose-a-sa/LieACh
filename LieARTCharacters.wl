@@ -81,7 +81,7 @@ Rank[LieART`Private`productWeight_ProductWeight] :=
   Total[Rank /@ (List @@ LieART`Private`productWeight)];
 Rank[LieART`Private`irrepSum_IrrepPlus] :=
   Module[{gs},
-    gs = Union@Algebra[LieART`Private`irrepSum];
+    gs = Union@Map[Algebra, List @@ LieART`Private`irrepSum];
     If[Length@gs > 1, Message[Rank::irrplusdiff, gs] ];
     Max[Rank /@ gs]
   ];
@@ -98,8 +98,12 @@ Algebra[LieART`Private`productWeight_ProductWeight] :=
   ProductAlgebra @@ Map[Algebra, List @@ LieART`Private`productWeight];
 Algebra[LieART`Private`irrepTimes_IrrepTimes] := 
   Algebra@Last[LieART`Private`irrepTimes];
-Algebra[LieART`Private`irrepSum_IrrepPlus] := 
-  Map[Algebra, List @@ LieART`Private`irrepSum];
+Algebra[LieART`Private`irrepSum_IrrepPlus] :=
+  First@Union@Map[Algebra, List @@ LieART`Private`irrepSum] /;
+  Length@Union@Map[Algebra, List @@ LieART`Private`irrepSum] == 1;
+Algebra[LieART`Private`irrepSum_IrrepPlus] :=
+  Null /; Message[Algebra::irrplusdiff, Union@Map[Algebra, List @@ LieART`Private`irrepSum]];
+Algebra::irrplusdiff = "IrrepPlus contains irreps of different algebras `1`."
 
 SetAttributes[ProductAlgebra, {Flat}];
 
