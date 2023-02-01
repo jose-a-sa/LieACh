@@ -9,14 +9,14 @@ These states/operators are organized into the character semisimple representatio
 In terms of characters, this can be written as
 $$\chi(z_1, \dots, z_r) = \sum_{\lambda\in I} m_{\lambda} \chi_{\lambda}(z_1, \dots, z_r) ~~.$$
 Here we define:
-- $\chi$ the full character and $\chi_{\lambda}$ the character of an irrep $R_{\lambda}$;
-- $r = \mathrm{rank}(\mathfrak{g})$ as the rank of the Lie algebra;
-- $\lambda$ is the Dinkin label that represents the highest weight of the representation $R_{\lambda}$;
-- $m_{\lambda}\in\mathbb{Z}_{+}$ is the multiplicity of the irrep $R_{\lambda}$.
+- $\chi$ the full character and $\chi_{\lambda}$ the character of an irrep $R_{\lambda}$
+- $r = \mathrm{rank}(\mathfrak{g})$ as the rank of the Lie algebra
+- $\lambda$ is the Dinkin label that represents the highest weight of the representation $R_{\lambda}$
+- $m_{\lambda} \in \mathbb{Z}$ is the multiplicity of the irrep $R_{\lambda}$
 
 This package allows to compute characters of irreps of Lie algebras using the `WeightSystem` function from the LieART package.
-Additionally, defines an weak ordering function to help sort dominant weights of irreps and obtain the highest weights in a expression.
-Finally, and more importantly, `CharacterDecomposition[g][expr, {vars..}]` produces an `Association` encoding key-value pairs of $(\lambda, m_\lambda)$ given a character $\chi$ of any semisimple representation of an algebra `g`.
+Additionally, defines a weak ordering function to help sort dominant weights of irreps and obtain the highest weights in a expression.
+Finally, and more importantly, `CharacterDecomposition[g][expr, {vars..}]` produces an `Association` encoding key-value pairs of $(\lambda, m_\lambda)$ for a given character $\chi$ of any semisimple representation of the algebra `g`.
 
 ## Usage
 
@@ -27,9 +27,8 @@ There's no need to install or load LieART before using the package. When using i
 ```mathematica
 << LieARTCharacters`
 ```
-the package will check for LieART among the installed packages and will load it if it present. Otherwise, it will automatically download it from the [official website](https://lieart.hepforge.org/).
-
-Once it is downloaded and imported, it modifies some of the internal definitions of LieART to better work with the product algebras, product irreps and product weights.
+the package will check for LieART among the installed packages, and will load it if found. Otherwise, it will automatically be downloaded from the [official website](https://lieart.hepforge.org/).
+Once LieART is imported, LieARTCharacters modifies some of the internal definitions of LieART to better work with the product algebras, product irreps and product weights.
 
 ## References
 
