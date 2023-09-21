@@ -1,6 +1,7 @@
 # LieARTCharacters
 
 Package that extends LieART for the use of 1-dimensional representations of Lie algebras, i.e. characters.
+It is able to find the decomposition of 1-dim representations into characters of irreducible representations.
 
 ## Description
 
