@@ -1,6 +1,6 @@
 # LieARTCharacters
 
-Single file package that extends LieART for the use of 1-dimensional representations of Lie algebras, i.e. characters.
+Package that extends LieART for the use of 1-dimensional representations of Lie algebras, i.e. characters.
 
 ## Description
 
