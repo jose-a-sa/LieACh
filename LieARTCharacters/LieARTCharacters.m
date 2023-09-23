@@ -9,12 +9,6 @@ ClearAll["LieARTCharacters`*"];
 BeginPackage["LieARTCharacters`", {"LieART`"}]
 
 
-DominantWeightOrder//FullForm
-
-
-CharacterDecomposition::usage
-
-
 DominantWeightOrder::usage = "\
 DominantWeightOrder[\!\(\*SubscriptBox[
 StyleBox[\"w\", \"TI\"], 
