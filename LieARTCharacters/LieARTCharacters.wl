@@ -139,7 +139,7 @@ Ch[g: (_?AlgebraQ | _?AlgebraClassQ), {lbl__?DynkinLabelQ}] :=
 Ch[w: (WeightAlpha[g_][lbl__]) ] :=
   Ch[ OmegaBasis@w ];
 Ch[ Weight[g_][lbl__] ] /; (!IrrepQ[ Irrep[g][lbl] ]) :=
-  Null /; Message[Ch::errirrep, Irrep[g][n] ];
+  Null /; Message[Ch::errirrep, Irrep[g][lbl] ];
 Ch[ Weight[g_][lbl__] ] :=
   Ch[ Irrep[g][lbl] ];
 Ch[ ProductWeight[w__] ] /; (!ProductIrrepQ[ProductIrrep @@ ToIrrep@OmegaBasis@{w}]) :=
