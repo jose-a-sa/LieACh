@@ -1,6 +1,10 @@
 #!/usr/bin/env wolframscript
 
 $appName = "LieARTCharacters";
+$icon = MemberQ[
+  Rest@$ScriptCommandLine,
+  _String?(StringMatchQ["-i" | "--icon"])
+];
 
 tAbort[str_] := (Print["ABORTING: ", Style[str, Red, Bold]]; Quit[])
 If[$VersionNumber < 12.3, printAbort["Mathematica 12.3 or later required."]]
@@ -61,15 +65,17 @@ generateLogo[algebra_: LieART`E6, thick_:0.005, opa_:0.8, size_Integer: 128] :=
       ImageSize -> {size, size}
     ]
   ];
-MapThread[
-	Export[
-		FileNameJoin[{AbsoluteFileName[$appName], "icon", "icon-"<>ToString[#1]<>".svg"}], 
-		generateLogo[E6, #2, 0.8], 
-		ImageSize -> {#1, #1}
-	] &,
-	{{64, 128, 256, 512}, 
-	{0.005, 0.004, 0.003, 0.002},
-	{0.85, 0.8, 0.75, 0.70}}
+If[$icon,
+  MapThread[
+    Export[
+      FileNameJoin[{AbsoluteFileName[$appName], "icon", "icon-"<>ToString[#1]<>".svg"}], 
+      generateLogo[E6, #2, #3], 
+      ImageSize -> {#1, #1}
+    ] &,
+    {{64, 128, 256, 512}, 
+    {0.005, 0.004, 0.003, 0.002},
+    {0.85, 0.8, 0.75, 0.70}}
+  ]
 ];
 
 

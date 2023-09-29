@@ -5,57 +5,35 @@
 Unprotect["LieARTCharacters`*"];
 ClearAll["LieARTCharacters`*"];
 
-
 BeginPackage["LieARTCharacters`", {"LieART`"}]
 
-
-DominantWeightOrder::usage = "\
-DominantWeightOrder[\!\(\*SubscriptBox[
-StyleBox[\"w\", \"TI\"], 
-StyleBox[\"1\", \"TR\"]]\),\!\(\*SubscriptBox[
-StyleBox[\"w\", \"TI\"], 
-StyleBox[\"2\", \"TR\"]]\)] computes the weak ordering between weights \!\(\*SubscriptBox[
-StyleBox[\"w\", \"TI\"], 
-StyleBox[\"1\", \"TR\"]]\) and \!\(\*SubscriptBox[
-StyleBox[\"w\", \"TI\"], 
-StyleBox[\"2\", \"TR\"]]\).";
-HighestWeights::usage = "\
-HighestWeights[\!\(\*
-StyleBox[\"list\", \"TI\"]\)] returns the list of highest weights from the \!\(\*
-StyleBox[\"list\", \"TI\"]\) of weights of the same algebra.";
-HighestWeightsFrom::usage = "\
-HighestWeightsFrom[\!\(\*
-StyleBox[\"expr\", \"TI\"]\), \!\(\*
-StyleBox[\"vars\", \"TI\"]\), \!\(\*
-StyleBox[\"algebra\", \"TI\"]\)] returns a list of highest weights found in the expr taken as a character of algebra";
-Ch::usage = "Ch[irrep] returns a pure function representing the character of irrep.";
-CharacterDecomposition::usage = "\
-CharacterDecomposition[\!\(\*
-StyleBox[\"expr\", \"TI\"]\), \!\(\*
-StyleBox[\"vars\", \"TI\"]\), \!\(\*
-StyleBox[\"algebra\", \"TI\"]\)] decomposes \!\(\*
-StyleBox[\"expr\", \"TI\"]\) into characters of irreps, returning a key-value Association with the corresponding coefficients.
-CharacterDecomposition[\!\(\*
-StyleBox[\"algebra\", \"TI\"]\)][\!\(\*
-StyleBox[\"expr\", \"TI\"]\), \!\(\*
-StyleBox[\"vars\", \"TI\"]\)] is equivalent (alias) to CharacterDecomposition[\!\(\*
-StyleBox[\"expr\", \"TI\"]\), \!\(\*
-StyleBox[\"vars\", \"TI\"]\), \!\(\*
-StyleBox[\"algebra\", \"TI\"]\)].
-CharacterDecomposition[\!\(\*
-StyleBox[\"expr\", \"TI\"]\), \!\(\*
-StyleBox[\"vars\", \"TI\"]\)] computes the character decomposition of \!\(\*
-StyleBox[\"expr\", \"TI\"]\) for the algebra \!\(\*
-StyleBox[SubscriptBox[\"A\", \"n\"], \"TI\"]\), where \!\(\*
-StyleBox[\"n\", \"TI\"]\) is the number of \!\(\*
-StyleBox[\"vars\", \"TI\"]\).";
-MonomialCoefficient::usage = "MonomialCoefficient[expr, vars, powers] returns";
-WeylGroupOrder::usage = "WeylGroupOrder[algebra] returns the number of algebra elements.";
-FugacityMap::usage = "FugacityMap[origin, destination]";
+Ch::usage = 
+"Ch[irrep] returns a pure function representing the character of irrep.\
+\nCh[algebra, list] returns character of Irrep[algebra][list].\
+\nCh[list] returns character Irrep[A][list].\
+\nCh[IrrepTimes[a,irrep]] returns a pure function of character of irrep multiplied by multiplicity a.\
+\nCh[IrrepPlus[Subscript[rep, 1],Subscript[rep, 2]]] returns a pure function of sum of characters of Subscript[rep, 1] and Subscript[rep, 2]."
+DominantWeightOrder::usage = 
+"DominantWeightOrder[w1, w2] computes the weak ordering between w1 and w2.";
+HighestWeights::usage = 
+"HightestWeights[list] returns the list of highest weights from the list of weights of the same algebra.";
+HighestWeightsFrom::usage =
+"HighestWeightsFrom[expr,vars, algebra] returns a list of highest weights found in the expr taken as a character of algebra.\
+\nHighestWeightsFrom[algebra][expr,vars] is equivalent (alias) to HighestWeightsFrom[expr,vars,algebra].\
+\nHighestWeightsFrom[expr, vars] returns a list of highest weights of expr for the algebra Algebra[A, n], where n is the number of vars.";
+CharacterDecomposition::usage = 
+"CharacterDecomposition[expr, vars, algebra] decomposes expr into characters of irreps, returning a key-value Association with the corresponding coefficients.\
+\nCharacterDecomposition[algebra][expr, vars] is equivalent (alias) to CharacterDecompostition[expr, vars, algebra].\
+\nCharacterDecomposition[expr, vars] computes the character decomposition of expr for the algebra Algebra[A][n], where n is the number of vars.";
+MonomialCoefficient::usage = 
+"MonomialCoefficient[expr,vars,exponents] returns the coefficient the monomial (Times@@ (vars^exponents)).";
+WeylGroupOrder::usage = 
+"WeylGroupOrder[algebra] returns the number of elements in the finite Weyl group of algebra.";
+FugacityMap::usage = 
+"FugacityMap[algebra, subalgebra] defines the map of fugacities between the simple algebra and subalgebra.";
 
 StepMonitorFunction::usage = "StepMonitorFunction is an option for CharacterDecomposition to help monitor each step in the iteration.";
-
-$SaveCharacterDefinitions::usage = "Important performance saving tool";
+$SaveCharacterDefinitions::usage = "Flag which detemines if the character is saved in the definition of Ch after each computation.";
 
 $SaveCharacterDefinitions = True;
 
@@ -66,7 +44,8 @@ Begin["`Private`"];
 DynkinLabelQ[n__Integer?NonNegative] = True;
 DynkinLabelQ[_] = False;
 
-AlgebraQ[ Algebra[A | B | C | D][_Integer] ] = True;
+
+AlgebraQ[ Algebra[A | B | C | D][_Integer?NonNegative] ] = True;
 AlgebraQ[E6 | E7 | E8 | G2 | F4] = True;
 AlgebraQ[_] = False;
 
@@ -75,8 +54,10 @@ AlgebraClassQ[E6 | E7 | E8 | G2 | F4] = True;
 AlgebraClassQ[_] = False;
 
 ProductAlgebraQ[ ProductAlgebra[__?AlgebraQ] ] = True;
+ProductAlgebraQ[ ProductAlgebra[__?AlgebraQ, LieART`U1] ] = True;
 ProductAlgebraQ[_] = False;
 
+IrrepQ[ Irrep[U][_?NumberQ] ] = True;
 IrrepQ[ Irrep[A | B | C | D][__?DynkinLabelQ] ] = True;
 IrrepQ[ Irrep[E6][(Repeated[_, {6}])?DynkinLabelQ] ] = True;
 IrrepQ[ Irrep[E7][(Repeated[_, {7}])?DynkinLabelQ] ] = True;
@@ -86,6 +67,7 @@ IrrepQ[ Irrep[G2][(Repeated[_, {2}])?DynkinLabelQ] ] = True;
 IrrepQ[_] = False;
 
 ProductIrrepQ[ ProductIrrep[__?IrrepQ] ] = True;
+ProductIrrepQ[ ProductIrrep[__?IrrepQ, Irrep[U][_?NumberQ] ] ] = True;
 ProductIrrepQ[_] = False;
 
 SingleOrProdIrrepQ[_?IrrepQ] = True;
@@ -96,15 +78,16 @@ IrrepTimesQ[ HoldPattern[IrrepTimes][_, _?SingleOrProdIrrepQ] ] = True;
 IrrepTimesQ[_] = False;
 
 IrrepPlusQ[ IrrepPlus[s: (_?IrrepTimesQ | _?SingleOrProdIrrepQ) ..] ] :=
-  SameQ @@ Algebra@IrrepPlus[s];
+  Apply[SameQ, Algebra /@ {s}];
 IrrepPlusQ[_] = False;
 
-WeightQ[ (WeightAlpha | Weight)[A | B | C | D][__] ] = True;
-WeightQ[ (WeightAlpha | Weight)[E6][(Repeated[_, {6}])] ] = True;
-WeightQ[ (WeightAlpha | Weight)[E7][(Repeated[_, {7}])] ] = True;
-WeightQ[ (WeightAlpha | Weight)[E8][(Repeated[_, {8}])] ] = True;
-WeightQ[ (WeightAlpha | Weight)[F4][(Repeated[_, {4}])] ] = True;
-WeightQ[ (WeightAlpha | Weight)[G2][(Repeated[_, {2}])] ] = True;
+
+WeightQ[ (WeightAlpha | Weight | WeightOrthogonal)[A | B | C | D][__] ] = True;
+WeightQ[ (WeightAlpha | Weight | WeightOrthogonal)[E6][(Repeated[_, {6}])] ] = True;
+WeightQ[ (WeightAlpha | Weight | WeightOrthogonal)[E7][(Repeated[_, {7}])] ] = True;
+WeightQ[ (WeightAlpha | Weight | WeightOrthogonal)[E8][(Repeated[_, {8}])] ] = True;
+WeightQ[ (WeightAlpha | Weight | WeightOrthogonal)[F4][(Repeated[_, {4}])] ] = True;
+WeightQ[ (WeightAlpha | Weight | WeightOrthogonal)[G2][(Repeated[_, {2}])] ] = True;
 WeightQ[_] = False;
 
 ProductWeightQ[ ProductWeight[__?WeightQ] ] = True;
@@ -148,7 +131,10 @@ Ch[ ProductWeight[w__] ] :=
   Ch[ ProductIrrep @@ ToIrrep@OmegaBasis@{w} ];
 Ch[rep_?IrrepQ] :=
   Module[{ws, f, func},
-    ws = MapAt[Apply[List], WeightSystemWithMul[rep], {All, 1}];
+    ws = MapAt[Apply[List], {All, 1}]@Switch[Algebra[rep], 
+      Algebra[U][1], {{Weight[U] @@ rep, 1}},
+      _, WeightSystemWithMul[rep]
+    ];
     f = Total[(#2* Apply[Times, Array[Slot, Rank@rep]^#1] &) @@@ ws];
     func = Function[Evaluate@f];
     If[$SaveCharacterDefinitions,
@@ -171,7 +157,7 @@ Ch[{reps__?IrrepQ}] :=
 Ch[prodRep_?ProductIrrepQ] :=
   Module[{reps, rnks, f, func},
     reps = List @@ prodRep;
-    rnks = Rank /@ reps;
+    rnks = Rank /@ reps // ReplaceAll[Rank[Irrep[U][_?NumberQ]] -> 1];
     f = Times @@ MapThread[
       Ch[#1] @@ Array[Slot, #2, #3] &,
       {reps, rnks, Accumulate[{1, Splice@Most@rnks}]}
@@ -268,6 +254,13 @@ HighestWeightsFrom[expr_, {vars__}, g : (_?AlgebraQ | _?AlgebraClassQ) : A] :=
       Return[{}]
     ];
     HighestWeights[W]
+  ];
+HighestWeightsFrom[ Algebra[U][1] ][expr_, {var_}] :=
+  HighestWeightsFrom[expr, {var}, Algebra[U][1] ];
+HighestWeightsFrom[expr_, {var_}, Algebra[U][1] ] :=
+  Module[{vv},
+    {terms, vv} = GroebnerBasis`DistributedTermsList[expr, {var}];
+    Map[ Weight[U], terms[[All,1]] . Exponent[vv, var] ]
   ];
 HighestWeightsFrom[expr_, {vars__}, g_?ProductAlgebraQ] :=
   Module[{gs, rk, v0, varsByRk, flattenA, foldF, coef},
@@ -373,7 +366,7 @@ FugacityMap[g_?AlgebraQ, gsub : (_?AlgebraQ | ProductAlgebra[(_?AlgebraQ | U1) .
     map = Times @@@ (Array[Subscript[\[FormalZ], #] &, Length@#]^# &) /@ Transpose[P];
     Thread[Array[Subscript[\[FormalZ], #] &, Length@map] -> map]
   ], Null &];
-FugacityMap::nosubalg = "`1` does not have `2` as a subalgebra. Try changing the order in `2`.";
+FugacityMap::nosubalg = "`1` does not have `2` as a subalgebra. A U1 factor may be missing or try changing the order in `2`.";
 SetAttributes[FugacityMap, {ReadProtected, Protected}];
 
 

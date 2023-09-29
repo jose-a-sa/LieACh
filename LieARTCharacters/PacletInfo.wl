@@ -2,7 +2,7 @@
 
 Paclet[
   Name -> "LieARTCharacters",
-  Version -> "0.0.1",
+  Version -> "2.1.0",
   WolframVersion -> "10.0+",
   Creator -> "Jose Sa <jose.cerq.sa@gmail.com>",
   Description -> "Manipulate Lie algebra characters, extending the LieART package.",

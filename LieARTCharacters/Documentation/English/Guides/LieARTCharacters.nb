@@ -10,21 +10,23 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     14842,        387]
-NotebookOptionsPosition[     10271,        288]
-NotebookOutlinePosition[     10795,        306]
-CellTagsIndexPosition[     10752,        303]
+NotebookDataLength[     15173,        392]
+NotebookOptionsPosition[     10602,        293]
+NotebookOutlinePosition[     11126,        311]
+CellTagsIndexPosition[     11083,        308]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["LieARTCharacters: LieART extension for characters", "GuideTitle",
+Cell["LieARTCharacters: Lie algebra character representations", "GuideTitle",
+ CellChangeTimes->{{3.904918707636088*^9, 3.90491871101328*^9}, {
+  3.904918757987937*^9, 3.904918776763563*^9}},
  CellID->1900941908,ExpressionUUID->"f3f2c844-c407-4902-8f3c-cab46c9a773c"],
 
 Cell[TextData[{
- "Character incredible powerful to identify Lie algebra representations. They \
+ "Characters are a powerful to identify Lie algebra representations. They \
 appear in many contexts, especially in theoretical and experimental particle. \
 More specifically, this package was developed with the intention of \
 automating the decomposition of characters into characters of ",
@@ -34,7 +36,7 @@ automating the decomposition of characters into characters of ",
 }], "GuideAbstract",
  CellChangeTimes->{{3.90464786713553*^9, 3.904647956581943*^9}, {
   3.9046479933229647`*^9, 3.9046482306848373`*^9}, {3.904648408449381*^9, 
-  3.904648441996335*^9}},
+  3.904648441996335*^9}, {3.904918742210951*^9, 3.9049187475213842`*^9}},
  CellID->1016431337,ExpressionUUID->"29b937e4-cfe2-4b1a-aed8-df8f591619d2"]
 }, Open  ]],
 
@@ -223,7 +225,10 @@ Cell["Related Guides", "GuideMoreAboutSection",
  CellChangeTimes->{{3.8430423939366693`*^9, 3.843042395176153*^9}},
  CellID->8165413,ExpressionUUID->"8fcf17b8-cba8-4a4c-b75b-4210ae9a907c"],
 
-Cell["XXXX", "GuideMoreAbout",
+Cell[TextData[ButtonBox["LieART: Lie Algebras and Representation Theory",
+ BaseStyle->"Link",
+ ButtonData->"paclet:LieART/guide/LieART"]], "GuideMoreAbout",
+ CellChangeTimes->{3.90491866650756*^9},
  CellID->1944626530,ExpressionUUID->"8f67be13-9c71-4424-ba00-517fe6828240"],
 
 Cell["XXXX", "GuideMoreAbout",
@@ -306,86 +311,86 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 147, 1, 105, "GuideTitle",ExpressionUUID->"f3f2c844-c407-4902-8f3c-cab46c9a773c",
+Cell[580, 22, 267, 3, 147, "GuideTitle",ExpressionUUID->"f3f2c844-c407-4902-8f3c-cab46c9a773c",
  CellID->1900941908],
-Cell[730, 25, 623, 12, 102, "GuideAbstract",ExpressionUUID->"29b937e4-cfe2-4b1a-aed8-df8f591619d2",
+Cell[850, 27, 667, 12, 80, "GuideAbstract",ExpressionUUID->"29b937e4-cfe2-4b1a-aed8-df8f591619d2",
  CellID->1016431337]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1390, 42, 109, 1, 87, "GuideFunctionsSection",ExpressionUUID->"21c9254e-c5cd-4ef0-93d1-43c039068451",
+Cell[1554, 44, 109, 1, 87, "GuideFunctionsSection",ExpressionUUID->"21c9254e-c5cd-4ef0-93d1-43c039068451",
  CellID->2076552721],
 Cell[CellGroupData[{
-Cell[1524, 47, 190, 2, 45, "GuideFunctionsSubsection",ExpressionUUID->"451b82c6-65aa-48e8-bfaf-0e62908e3fac",
+Cell[1688, 49, 190, 2, 45, "GuideFunctionsSubsection",ExpressionUUID->"451b82c6-65aa-48e8-bfaf-0e62908e3fac",
  CellID->1290721873],
-Cell[1717, 51, 786, 19, 32, "GuideText",ExpressionUUID->"89df320e-026b-43ec-85d1-d5084ee9acdc",
+Cell[1881, 53, 786, 19, 32, "GuideText",ExpressionUUID->"89df320e-026b-43ec-85d1-d5084ee9acdc",
  CellID->1864834450],
-Cell[2506, 72, 711, 17, 32, "GuideText",ExpressionUUID->"2070a2d7-e258-4f94-8e9e-02c1b7ae2037",
+Cell[2670, 74, 711, 17, 32, "GuideText",ExpressionUUID->"2070a2d7-e258-4f94-8e9e-02c1b7ae2037",
  CellID->1896256832],
-Cell[3220, 91, 667, 15, 32, "GuideText",ExpressionUUID->"916717cc-bdd2-48ed-a574-8110ade1e8ee",
+Cell[3384, 93, 667, 15, 32, "GuideText",ExpressionUUID->"916717cc-bdd2-48ed-a574-8110ade1e8ee",
  CellID->136691204]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3924, 111, 185, 2, 45, "GuideFunctionsSubsection",ExpressionUUID->"2dbc5ffb-4974-4222-8a7a-066d6a4601f9",
+Cell[4088, 113, 185, 2, 45, "GuideFunctionsSubsection",ExpressionUUID->"2dbc5ffb-4974-4222-8a7a-066d6a4601f9",
  CellID->1108145091],
-Cell[4112, 115, 684, 14, 32, "GuideText",ExpressionUUID->"ad4b3098-5107-4500-88f5-0396a66745c8",
+Cell[4276, 117, 684, 14, 32, "GuideText",ExpressionUUID->"ad4b3098-5107-4500-88f5-0396a66745c8",
  CellID->222043741],
-Cell[4799, 131, 571, 13, 32, "GuideText",ExpressionUUID->"76c39a75-cbac-4b40-bd92-605a618fae24",
+Cell[4963, 133, 571, 13, 32, "GuideText",ExpressionUUID->"76c39a75-cbac-4b40-bd92-605a618fae24",
  CellID->466606529],
-Cell[5373, 146, 601, 13, 32, "GuideText",ExpressionUUID->"9a60b1e8-d60f-4cfc-88ec-626c10dbcfb1",
+Cell[5537, 148, 601, 13, 32, "GuideText",ExpressionUUID->"9a60b1e8-d60f-4cfc-88ec-626c10dbcfb1",
  CellID->209991794]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6011, 164, 190, 2, 45, "GuideFunctionsSubsection",ExpressionUUID->"b61d6fd0-235b-4d85-9598-844536df05aa",
+Cell[6175, 166, 190, 2, 45, "GuideFunctionsSubsection",ExpressionUUID->"b61d6fd0-235b-4d85-9598-844536df05aa",
  CellID->1415399624],
-Cell[6204, 168, 548, 12, 32, "GuideText",ExpressionUUID->"8ac905fa-f732-4c96-ab88-f8f7b9b366b8",
+Cell[6368, 170, 548, 12, 32, "GuideText",ExpressionUUID->"8ac905fa-f732-4c96-ab88-f8f7b9b366b8",
  CellID->494266155]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6789, 185, 238, 3, 45, "GuideFunctionsSubsection",ExpressionUUID->"7fe3e842-1245-4edd-b595-461d722a1ac3",
+Cell[6953, 187, 238, 3, 45, "GuideFunctionsSubsection",ExpressionUUID->"7fe3e842-1245-4edd-b595-461d722a1ac3",
  CellID->1056881212],
-Cell[7030, 190, 606, 13, 32, "GuideText",ExpressionUUID->"f961987e-92fb-4d23-9b18-1bd4a1e93485",
+Cell[7194, 192, 606, 13, 32, "GuideText",ExpressionUUID->"f961987e-92fb-4d23-9b18-1bd4a1e93485",
  CellID->1581936629]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7685, 209, 119, 1, 89, "GuideTutorialsSection",ExpressionUUID->"94e81a02-861e-47df-bfd6-6a0c5881be4a",
+Cell[7849, 211, 119, 1, 89, "GuideTutorialsSection",ExpressionUUID->"94e81a02-861e-47df-bfd6-6a0c5881be4a",
  CellID->1090691898],
-Cell[7807, 212, 104, 1, 29, "GuideTutorial",ExpressionUUID->"536ce7fd-cc51-4464-a885-193a8d4e69ca",
+Cell[7971, 214, 104, 1, 29, "GuideTutorial",ExpressionUUID->"536ce7fd-cc51-4464-a885-193a8d4e69ca",
  CellID->338318894],
-Cell[7914, 215, 105, 1, 29, "GuideTutorial",ExpressionUUID->"31bb8111-5f53-4257-ab8b-43ccee0359e4",
+Cell[8078, 217, 105, 1, 29, "GuideTutorial",ExpressionUUID->"31bb8111-5f53-4257-ab8b-43ccee0359e4",
  CellID->1736437849]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8056, 221, 188, 2, 89, "GuideMoreAboutSection",ExpressionUUID->"8fcf17b8-cba8-4a4c-b75b-4210ae9a907c",
+Cell[8220, 223, 188, 2, 89, "GuideMoreAboutSection",ExpressionUUID->"8fcf17b8-cba8-4a4c-b75b-4210ae9a907c",
  CellID->8165413],
-Cell[8247, 225, 106, 1, 29, "GuideMoreAbout",ExpressionUUID->"8f67be13-9c71-4424-ba00-517fe6828240",
+Cell[8411, 227, 273, 4, 29, "GuideMoreAbout",ExpressionUUID->"8f67be13-9c71-4424-ba00-517fe6828240",
  CellID->1944626530],
-Cell[8356, 228, 105, 1, 29, "GuideMoreAbout",ExpressionUUID->"e94af618-14cf-4c55-ad3e-d0e43fb53bf1",
+Cell[8687, 233, 105, 1, 29, "GuideMoreAbout",ExpressionUUID->"e94af618-14cf-4c55-ad3e-d0e43fb53bf1",
  CellID->784466017]
 }, Open  ]],
-Cell[8476, 232, 125, 1, 89, "GuideRelatedLinksSection",ExpressionUUID->"a4efb3ef-29b2-4a5a-88fd-3a4c09e92f94",
+Cell[8807, 237, 125, 1, 89, "GuideRelatedLinksSection",ExpressionUUID->"a4efb3ef-29b2-4a5a-88fd-3a4c09e92f94",
  CellID->1118238786],
 Cell[CellGroupData[{
-Cell[8626, 237, 111, 1, 86, "MetadataSection",ExpressionUUID->"e97eda32-b975-48f8-ab23-747ae0386728",
+Cell[8957, 242, 111, 1, 86, "MetadataSection",ExpressionUUID->"e97eda32-b975-48f8-ab23-747ae0386728",
  CellID->1609881405],
-Cell[8740, 240, 477, 12, 32, "History",ExpressionUUID->"de8dfa12-c37d-43ae-8b0a-a38adb56f1d4",
+Cell[9071, 245, 477, 12, 32, "History",ExpressionUUID->"de8dfa12-c37d-43ae-8b0a-a38adb56f1d4",
  CellID->1130305282],
 Cell[CellGroupData[{
-Cell[9242, 256, 122, 1, 25, "CategorizationSection",ExpressionUUID->"fdb36578-2bdd-4362-8ad3-76af371b9dda",
+Cell[9573, 261, 122, 1, 25, "CategorizationSection",ExpressionUUID->"fdb36578-2bdd-4362-8ad3-76af371b9dda",
  CellID->400533212],
-Cell[9367, 259, 134, 2, 70, "Categorization",ExpressionUUID->"bb016a59-7f8a-43b4-b4c8-e45cbec05b72",
+Cell[9698, 264, 134, 2, 70, "Categorization",ExpressionUUID->"bb016a59-7f8a-43b4-b4c8-e45cbec05b72",
  CellID->1547944386],
-Cell[9504, 263, 145, 2, 70, "Categorization",ExpressionUUID->"6ec4a1a2-980a-4faf-a4f4-ac7dab4c2841",
+Cell[9835, 268, 145, 2, 70, "Categorization",ExpressionUUID->"6ec4a1a2-980a-4faf-a4f4-ac7dab4c2841",
  CellID->1684395744],
-Cell[9652, 267, 142, 2, 70, "Categorization",ExpressionUUID->"1e401cf9-2250-4343-b3ef-10dcb9e70da0",
+Cell[9983, 272, 142, 2, 70, "Categorization",ExpressionUUID->"1e401cf9-2250-4343-b3ef-10dcb9e70da0",
  CellID->1509834654],
-Cell[9797, 271, 196, 4, 70, "Categorization",ExpressionUUID->"73d4722f-da16-4dad-9a1f-499d5fb6d6b5",
+Cell[10128, 276, 196, 4, 70, "Categorization",ExpressionUUID->"73d4722f-da16-4dad-9a1f-499d5fb6d6b5",
  CellID->1124256826]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[10030, 280, 111, 1, 25, "KeywordsSection",ExpressionUUID->"89c34159-d325-4861-ab6e-310fbeb3abfc",
+Cell[10361, 285, 111, 1, 25, "KeywordsSection",ExpressionUUID->"89c34159-d325-4861-ab6e-310fbeb3abfc",
  CellID->1823348276],
-Cell[10144, 283, 99, 1, 70, "Keywords",ExpressionUUID->"fbdee87f-8b00-4b49-94fb-655e31dc0872",
+Cell[10475, 288, 99, 1, 70, "Keywords",ExpressionUUID->"fbdee87f-8b00-4b49-94fb-655e31dc0872",
  CellID->422832042]
 }, Closed]]
 }, Open  ]]
