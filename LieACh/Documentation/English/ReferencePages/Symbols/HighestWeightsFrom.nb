@@ -29,7 +29,7 @@ Cell[TextData[{
   RowBox[{
    ButtonBox["HighestWeightsFrom",
     BaseStyle->"Link",
-    ButtonData->"paclet:LieARTCharacters/ref/HighestWeightsFrom"], "[", 
+    ButtonData->"paclet:LieACh/ref/HighestWeightsFrom"], "[", 
    RowBox[{
     StyleBox["expr", "TI"], ",", 
     StyleBox["vars", "TI"], ",", " ", 
@@ -50,7 +50,7 @@ Cell[TextData[{
    RowBox[{
     ButtonBox["HighestWeightsFrom",
      BaseStyle->"Link",
-     ButtonData->"paclet:LieARTCharacters/ref/HighestWeightsFrom"], "[", 
+     ButtonData->"paclet:LieACh/ref/HighestWeightsFrom"], "[", 
     StyleBox["algebra", "TI"], "]"}], "[", 
    RowBox[{
     StyleBox["expr", "TI"], ",", 
@@ -61,7 +61,7 @@ Cell[TextData[{
   RowBox[{
    ButtonBox["HighestWeightsFrom",
     BaseStyle->"Link",
-    ButtonData->"paclet:LieARTCharacters/ref/HighestWeightsFrom"], "[", 
+    ButtonData->"paclet:LieACh/ref/HighestWeightsFrom"], "[", 
    RowBox[{
     StyleBox["expr", "TI"], ",", 
     StyleBox["vars", "TI"], ",", 
@@ -73,7 +73,7 @@ Cell[TextData[{
   RowBox[{
    ButtonBox["HighestWeightsFrom",
     BaseStyle->"Link",
-    ButtonData->"paclet:LieARTCharacters/ref/HighestWeightsFrom"], "[", 
+    ButtonData->"paclet:LieACh/ref/HighestWeightsFrom"], "[", 
    RowBox[{
     StyleBox["expr", "TI"], ",", " ", 
     StyleBox["vars", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
@@ -106,7 +106,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["HighestWeights",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/HighestWeights"]], "InlineFormula",
+   ButtonData->"paclet:LieACh/ref/HighestWeights"]], "InlineFormula",
   FormatType->StandardForm,ExpressionUUID->
   "8fea2f76-2a87-4863-8914-9b335904492a"],
  " on all dominant weights found in the expression."
@@ -160,7 +160,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["HighestWeights",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/HighestWeights"]], 
+   ButtonData->"paclet:LieACh/ref/HighestWeights"]], 
   "InlineSeeAlsoFunction",
   TaggingRules->{"PageType" -> "Function"},ExpressionUUID->
   "99e1a5a5-341f-4d23-a4a5-fd9eb29264d8"],
@@ -168,7 +168,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["DominantWeightOrder",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/DominantWeightOrder"]], 
+   ButtonData->"paclet:LieACh/ref/DominantWeightOrder"]], 
   "InlineSeeAlsoFunction",
   TaggingRules->{"PageType" -> "Function"},
   CellTags->"bed1676b-c072-4577-98b9-6182139f7151",ExpressionUUID->
@@ -177,7 +177,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["MonomialCoefficient",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/MonomialCoefficient"]], 
+   ButtonData->"paclet:LieACh/ref/MonomialCoefficient"]], 
   "InlineSeeAlsoFunction",
   TaggingRules->{"PageType" -> "Function"},
   CellTags->"787c651e-899c-4475-94b0-c5c65e4bb11e",ExpressionUUID->
@@ -246,10 +246,10 @@ Cell[CellGroupData[{
 Cell["Related Guides", "MoreAboutSection",
  CellID->368742217,ExpressionUUID->"c4807108-3fc9-4eae-9617-70cedb73d74f"],
 
-Cell[TextData[ButtonBox["LieARTCharacters: Lie algebra character \
+Cell[TextData[ButtonBox["LieACh: Lie algebra character \
 representations",
  BaseStyle->"Link",
- ButtonData->"paclet:LieARTCharacters/guide/LieARTCharacters"]], "MoreAbout",
+ ButtonData->"paclet:LieACh/guide/LieACh"]], "MoreAbout",
  CellChangeTimes->{3.9049188481989202`*^9, 3.904919110121786*^9},
  CellID->1865811698,ExpressionUUID->"dc5c7c90-3e58-4745-8318-c9a864f5a7a0"]
 }, Open  ]],
@@ -294,7 +294,7 @@ Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]],
  CellID->1015319884,ExpressionUUID->"dd3d1372-f858-41b6-b13b-faeb75b259cc"],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<LieARTCharacters`\>\"", 
+ RowBox[{"Needs", "[", "\"\<LieACh`\>\"", 
   "]"}]], "ExampleInitialization",
  CellID->576231326,ExpressionUUID->"4cdbcfd0-c343-48a2-8995-a3ee44f76b65"]
 }, Open  ]],
@@ -640,15 +640,15 @@ Cell["Symbol", "Categorization",
  CellLabel->"Entity Type",
  CellID->1692167910,ExpressionUUID->"d0dcfde6-d798-4d43-90ae-651bc2ac0a60"],
 
-Cell["LieARTCharacters", "Categorization",
+Cell["LieACh", "Categorization",
  CellLabel->"Paclet Name",
  CellID->2032965924,ExpressionUUID->"4e8c66a1-1960-4c7e-b193-39d9aa71e3d9"],
 
-Cell["LieARTCharacters`", "Categorization",
+Cell["LieACh`", "Categorization",
  CellLabel->"Context",
  CellID->28750949,ExpressionUUID->"d380efc0-0ef7-4cdb-998a-6513a963f82d"],
 
-Cell["LieARTCharacters/ref/HighestWeightsFrom", "Categorization",
+Cell["LieACh/ref/HighestWeightsFrom", "Categorization",
  CellLabel->"URI",
  CellID->33379268,ExpressionUUID->"136c7745-b85b-4294-9eb2-bac6dc21c553"]
 }, Closed]],
@@ -687,7 +687,7 @@ Cell[BoxData[""], "Template",
 },
 WindowSize->{854, 1387},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-TaggingRules-><|"Paclet" -> "LieARTCharacters"|>,
+TaggingRules-><|"Paclet" -> "LieACh"|>,
 CellContext->"Global`",
 FrontEndVersion->"13.3 for Mac OS X ARM (64-bit) (June 3, 2023)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 

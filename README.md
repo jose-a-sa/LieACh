@@ -1,4 +1,4 @@
-# LieARTCharacters
+# LieACh
 
 Package that extends LieART for the use of 1-dimensional representations of Lie algebras, i.e. characters.
 It is able to find the decomposition of 1-dim representations into characters of irreducible representations.
@@ -6,22 +6,22 @@ It is able to find the decomposition of 1-dim representations into characters of
 
 ## Installation
 
-The following function and commands will automatically download the latest release of LieARTCharacters (and LieART) and install it:
+The following function and commands will automatically download the latest release of LieACh (and LieART) and install it:
 
 ```mathematica
-updateLieARTCharacters[] := Module[{json, entry, download, target},
-  Check[json = Import["https://api.github.com/repos/jose-a-sa/LieARTCharacters/releases", "JSON"];
+updateLieACh[] := Module[{json, entry, download, target},
+  Check[json = Import["https://api.github.com/repos/jose-a-sa/LieACh/releases", "JSON"];
     entry = Last@SortBy[json, DateObject@*Lookup["published_at"]];
     download = Lookup[First@Lookup[entry, "assets"], "browser_download_url"];
-    target = FileNameJoin[{CreateDirectory[], "LieARTCharacters.paclet"}];
+    target = FileNameJoin[{CreateDirectory[], "LieACh.paclet"}];
     If[$Notebooks, PrintTemporary@Labeled[ProgressIndicator[Appearance -> "Necklace"], 
-      "Downloading LieARTCharacters...", Right], Print["Downloading..."]];
+      "Downloading LieACh...", Right], Print["Downloading..."]];
     URLSave[download, target], Return[$Failed]
   ];
   If[FileExistsQ[target], PacletManager`PacletInstall[target, ForceVersionInstall->True], $Failed]
 ];
-updateLieARTCharacters[]
-Needs["LieARTCharacters`"]
+updateLieACh[]
+Needs["LieACh`"]
 ```
 
 ## Usage
@@ -31,10 +31,10 @@ For example, `A2` or equivalently `Algebra[A][2]` is the complexified $\mathfrak
 
 There's no need to install or load LieART before using the package. When using in Mathematica
 ```mathematica
-<< LieARTCharacters`
+<< LieACh`
 ```
 the package will check for LieART among the installed packages, and will load it if found. Otherwise, it will automatically be downloaded from the [official website](https://lieart.hepforge.org/).
-Once LieART is imported, LieARTCharacters modifies some of the internal definitions of LieART to better work with the product algebras, product irreps and product weights.
+Once LieART is imported, LieACh modifies some of the internal definitions of LieART to better work with the product algebras, product irreps and product weights.
 
 ## Description
 

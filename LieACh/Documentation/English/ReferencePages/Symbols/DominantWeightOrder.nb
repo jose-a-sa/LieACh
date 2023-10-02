@@ -29,7 +29,7 @@ Cell[TextData[{
   RowBox[{
    ButtonBox["DominantWeightOrder",
     BaseStyle->"Link",
-    ButtonData->"paclet:LieARTCharacters/ref/DominantWeightOrder"], "[", 
+    ButtonData->"paclet:LieACh/ref/DominantWeightOrder"], "[", 
    RowBox[{
     SubscriptBox[
      StyleBox["w", "TI"], 
@@ -61,7 +61,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["DominantWeightOrder",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/DominantWeightOrder"]], 
+   ButtonData->"paclet:LieACh/ref/DominantWeightOrder"]], 
   "InlineFormula",ExpressionUUID->"47838354-17a5-4cbf-9cb0-0fab71e71b40"],
  " is by the difference of the weights in the ",
  Cell[BoxData[
@@ -199,7 +199,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["HighestWeights",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/HighestWeights"]], 
+   ButtonData->"paclet:LieACh/ref/HighestWeights"]], 
   "InlineSeeAlsoFunction",
   TaggingRules->{"PageType" -> "Function"},
   CellTags->"46b244bf-8310-4965-b685-007d8f79568a",ExpressionUUID->
@@ -268,10 +268,10 @@ Cell[CellGroupData[{
 Cell["Related Guides", "MoreAboutSection",
  CellID->1415454305,ExpressionUUID->"1c6ac89b-b57a-4377-83dd-9491031b0272"],
 
-Cell[TextData[ButtonBox["LieARTCharacters: Lie algebra character \
+Cell[TextData[ButtonBox["LieACh: Lie algebra character \
 representations",
  BaseStyle->"Link",
- ButtonData->"paclet:LieARTCharacters/guide/LieARTCharacters"]], "MoreAbout",
+ ButtonData->"paclet:LieACh/guide/LieACh"]], "MoreAbout",
  CellChangeTimes->{3.9049188481989202`*^9, 3.904919110121786*^9},
  CellID->1865811698,ExpressionUUID->"5642c690-bbd5-4a00-9c24-0a9094892b4c"],
 
@@ -322,7 +322,7 @@ Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]],
  CellID->1545896649,ExpressionUUID->"219e2469-ad0c-4fee-81bb-c054a3ee313d"],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<LieARTCharacters`\>\"", 
+ RowBox[{"Needs", "[", "\"\<LieACh`\>\"", 
   "]"}]], "ExampleInitialization",
  CellID->1627818337,ExpressionUUID->"e806266b-26f0-475c-8e11-8cd5addcdc71"]
 }, Open  ]],
@@ -469,7 +469,7 @@ Cell[BoxData[
  TemplateBox[{
   "DominantWeightOrder", "algerr", 
    "\"Algebras of the dominant weights do not match.\"", 2, 10, 5, 
-   19524747010174422469, "Local", "LieARTCharacters`DominantWeightOrder"},
+   19524747010174422469, "Local", "LieACh`DominantWeightOrder"},
   "MessageTemplate2"]], "Message", "MSG",
  CellChangeTimes->{3.904929517824448*^9},
  CellLabel->"During evaluation of In[10]:=",
@@ -506,7 +506,7 @@ Cell[BoxData[
  TemplateBox[{
   "DominantWeightOrder", "argerr", "\"Arguments are not dominant weights.\"", 
    2, 11, 6, 19524747010174422469, "Local", 
-   "LieARTCharacters`DominantWeightOrder"},
+   "LieACh`DominantWeightOrder"},
   "MessageTemplate2"]], "Message", "MSG",
  CellChangeTimes->{3.904929519124688*^9},
  CellLabel->"During evaluation of In[11]:=",
@@ -545,7 +545,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["DominantWeightOrder",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/DominantWeightOrder"]], 
+   ButtonData->"paclet:LieACh/ref/DominantWeightOrder"]], 
   "InlineFormula",ExpressionUUID->"6c2f4a4b-faef-4aed-8ad3-b2e741c2c73f"],
  " works with ",
  Cell[BoxData[
@@ -700,15 +700,15 @@ Cell["Symbol", "Categorization",
  CellLabel->"Entity Type",
  CellID->1768287022,ExpressionUUID->"31432acf-ec10-4020-a7b0-993a615edd30"],
 
-Cell["LieARTCharacters", "Categorization",
+Cell["LieACh", "Categorization",
  CellLabel->"Paclet Name",
  CellID->1593620467,ExpressionUUID->"a56d40bf-90ba-44db-9c22-806cd57018f6"],
 
-Cell["LieARTCharacters`", "Categorization",
+Cell["LieACh`", "Categorization",
  CellLabel->"Context",
  CellID->563143485,ExpressionUUID->"9aed7b5d-cb9d-44b2-a473-a0fa4f9e4bcf"],
 
-Cell["LieARTCharacters/ref/DominantWeightOrder", "Categorization",
+Cell["LieACh/ref/DominantWeightOrder", "Categorization",
  CellLabel->"URI",
  CellID->792120066,ExpressionUUID->"bb40b7d5-5f6f-41e5-b6f3-370f47dfb96e"]
 }, Closed]],
@@ -747,7 +747,7 @@ Cell[BoxData[""], "Template",
 },
 WindowSize->{854, 1387},
 WindowMargins->{{118, Automatic}, {Automatic, 0}},
-TaggingRules-><|"Paclet" -> "LieARTCharacters"|>,
+TaggingRules-><|"Paclet" -> "LieACh"|>,
 CellContext->"Global`",
 FrontEndVersion->"13.3 for Mac OS X ARM (64-bit) (June 3, 2023)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 

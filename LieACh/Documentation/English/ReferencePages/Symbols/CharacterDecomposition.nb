@@ -29,7 +29,7 @@ Cell[TextData[{
   RowBox[{
    ButtonBox["CharacterDecomposition",
     BaseStyle->"Link",
-    ButtonData->"paclet:LieARTCharacters/ref/CharacterDecomposition"], "[", 
+    ButtonData->"paclet:LieACh/ref/CharacterDecomposition"], "[", 
    RowBox[{
     StyleBox["expr", "TI"], ",", " ", 
     StyleBox["vars", "TI"], 
@@ -52,7 +52,7 @@ Cell[TextData[{
    RowBox[{
     ButtonBox["CharacterDecomposition",
      BaseStyle->"Link",
-     ButtonData->"paclet:LieARTCharacters/ref/CharacterDecomposition"], "[", 
+     ButtonData->"paclet:LieACh/ref/CharacterDecomposition"], "[", 
     StyleBox["algebra", "TI"], "]"}], "[", 
    RowBox[{
     StyleBox["expr", "TI"], ",", " ", 
@@ -63,7 +63,7 @@ Cell[TextData[{
   RowBox[{
    ButtonBox["CharacterDecompostition",
     BaseStyle->"Link",
-    ButtonData->"paclet:LieARTCharacters/ref/CharacterDecompostition"], "[", 
+    ButtonData->"paclet:LieACh/ref/CharacterDecompostition"], "[", 
    RowBox[{
     StyleBox["expr", "TI"], ",", 
     StyleBox["vars", "TI"], ",", 
@@ -75,7 +75,7 @@ Cell[TextData[{
   RowBox[{
    ButtonBox["CharacterDecomposition",
     BaseStyle->"Link",
-    ButtonData->"paclet:LieARTCharacters/ref/CharacterDecomposition"], "[", 
+    ButtonData->"paclet:LieACh/ref/CharacterDecomposition"], "[", 
    RowBox[{
     StyleBox["expr", "TI"], ",", " ", 
     StyleBox["vars", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
@@ -106,7 +106,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["CharacterDecomposition",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/CharacterDecomposition"]], 
+   ButtonData->"paclet:LieACh/ref/CharacterDecomposition"]], 
   "InlineFormula",ExpressionUUID->"af308a83-57be-4c5b-aa30-8801bbf462ef"],
  " assumes the expression begin decomposed is of the form ",
  Cell[BoxData[
@@ -139,13 +139,13 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["HighestWeightsFrom",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/HighestWeightsFrom"]], 
+   ButtonData->"paclet:LieACh/ref/HighestWeightsFrom"]], 
   "InlineFormula",ExpressionUUID->"fb2dfd8c-a2bb-492d-8ab9-84d7ad763e88"],
  ". Using these, ",
  Cell[BoxData[
   ButtonBox["MonomialCoefficient",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/MonomialCoefficient"]], 
+   ButtonData->"paclet:LieACh/ref/MonomialCoefficient"]], 
   "InlineFormula",ExpressionUUID->"d8489a2c-ec1e-4619-a21c-9e232d19045a"],
  " finds the coefficient associated to highest weight monomials. "
 }], "Notes",
@@ -230,7 +230,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["Ch",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/Ch"]], "InlineSeeAlsoFunction",
+   ButtonData->"paclet:LieACh/ref/Ch"]], "InlineSeeAlsoFunction",
   TaggingRules->{"PageType" -> "Function"},
   CellTags->"f45ebe65-8d55-4265-91cb-3213251d472f",ExpressionUUID->
   "fd36ab46-b9ed-4361-9958-160f46acb2cf"],
@@ -238,7 +238,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["HighestWeightsFrom",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/HighestWeightsFrom"]], 
+   ButtonData->"paclet:LieACh/ref/HighestWeightsFrom"]], 
   "InlineSeeAlsoFunction",
   TaggingRules->{"PageType" -> "Function"},
   CellTags->"38f8240b-8fca-40b1-834a-49fb68594b46",ExpressionUUID->
@@ -247,7 +247,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["HighestWeights",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/HighestWeights"]], 
+   ButtonData->"paclet:LieACh/ref/HighestWeights"]], 
   "InlineSeeAlsoFunction",
   TaggingRules->{"PageType" -> "Function"},
   CellTags->"eaeb410f-016d-40d9-b4c0-9023827510ef",ExpressionUUID->
@@ -256,7 +256,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["FugacityMap",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/FugacityMap"]], 
+   ButtonData->"paclet:LieACh/ref/FugacityMap"]], 
   "InlineSeeAlsoFunction",
   TaggingRules->{"PageType" -> "Function"},
   CellTags->"48aa809e-9433-4eb2-8668-55d0eaece9a5",ExpressionUUID->
@@ -333,10 +333,10 @@ Cell[CellGroupData[{
 Cell["Related Guides", "MoreAboutSection",
  CellID->1502467932,ExpressionUUID->"420ecbd4-e515-4581-a11a-91f1bd9993ba"],
 
-Cell[TextData[ButtonBox["LieARTCharacters: Lie algebra character \
+Cell[TextData[ButtonBox["LieACh: Lie algebra character \
 representations",
  BaseStyle->"Link",
- ButtonData->"paclet:LieARTCharacters/guide/LieARTCharacters"]], "MoreAbout",
+ ButtonData->"paclet:LieACh/guide/LieACh"]], "MoreAbout",
  CellChangeTimes->{3.9049188481989202`*^9, 3.904919110121786*^9},
  CellID->1865811698,ExpressionUUID->"e3a87f06-0acf-4694-bf58-9c183c73142b"],
 
@@ -387,7 +387,7 @@ Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]],
  CellID->477926851,ExpressionUUID->"08e4c868-6421-469b-9f5e-8c312c989572"],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<LieARTCharacters`\>\"", 
+ RowBox[{"Needs", "[", "\"\<LieACh`\>\"", 
   "]"}]], "ExampleInitialization",
  CellChangeTimes->{{3.9044145043646183`*^9, 3.904414507997759*^9}, 
    3.904415625659306*^9, {3.904921333546609*^9, 3.904921334029262*^9}},
@@ -582,7 +582,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["CharacterDecomposition",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/CharacterDecomposition"]], 
+   ButtonData->"paclet:LieACh/ref/CharacterDecomposition"]], 
   "InlineFormula",ExpressionUUID->"be6fe8c0-c9c6-45a9-b9fb-79efcbf013b0"],
  " we can easily extract the random coefficients:"
 }], "ExampleText",
@@ -838,7 +838,7 @@ Cell[BoxData[
    "\"Decomposition might be incomplete, as highest weights \\!\\(\\*RowBox[{\
 \\\"{\\\", \\\"\\\\\\\"(5)\\\\\\\"\\\", \\\"}\\\"}]\\) as still present. \
 Pleases try to increase MaxIterations option.\"", 2, 29, 2, 
-   19524752561174820091, "Local", "LieARTCharacters`CharacterDecomposition"},
+   19524752561174820091, "Local", "LieACh`CharacterDecomposition"},
   "MessageTemplate2"]], "Message", "MSG",
  CellChangeTimes->{3.904417583038847*^9, 3.904930123116604*^9},
  CellLabel->"During evaluation of In[29]:=",
@@ -1804,7 +1804,7 @@ Cell[BoxData[
 \\!\\(\\*RowBox[{RowBox[{\\\"-\\\", FractionBox[\\\"1\\\", \
 SuperscriptBox[\\\"x\\\", \\\"6\\\"]]}], \\\"-\\\", FractionBox[\\\"1\\\", \
 SuperscriptBox[\\\"x\\\", \\\"5\\\"]]}]\\).\"", 2, 58, 22, 
-   19521382487704714787, "Local", "LieARTCharacters`CharacterDecomposition"},
+   19521382487704714787, "Local", "LieACh`CharacterDecomposition"},
   "MessageTemplate2"]], "Message", "MSG",
  CellChangeTimes->{{3.904414628273286*^9, 3.904414720937005*^9}, 
    3.904416803872302*^9, 3.904417074118023*^9},
@@ -1874,15 +1874,15 @@ Cell["Symbol", "Categorization",
  CellLabel->"Entity Type",
  CellID->1465928060,ExpressionUUID->"fc4e95fe-99c5-48a5-8608-50c40f72ee75"],
 
-Cell["LieARTCharacters", "Categorization",
+Cell["LieACh", "Categorization",
  CellLabel->"Paclet Name",
  CellID->1966294298,ExpressionUUID->"8de8af31-5fc6-4511-ade4-d53baed09651"],
 
-Cell["LieARTCharacters`", "Categorization",
+Cell["LieACh`", "Categorization",
  CellLabel->"Context",
  CellID->2029906450,ExpressionUUID->"167bb11d-725d-42d7-be3c-26e124c56b55"],
 
-Cell["LieARTCharacters/ref/CharacterDecomposition", "Categorization",
+Cell["LieACh/ref/CharacterDecomposition", "Categorization",
  CellLabel->"URI",
  CellID->1712488908,ExpressionUUID->"5dbb8299-5405-42fa-8dce-a1efa82d6d41"]
 }, Closed]],
@@ -1921,7 +1921,7 @@ Cell[BoxData[""], "Template",
 },
 WindowSize->{840, 1387},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-TaggingRules-><|"Paclet" -> "LieARTCharacters"|>,
+TaggingRules-><|"Paclet" -> "LieACh"|>,
 CellContext->"Global`",
 FrontEndVersion->"13.3 for Mac OS X ARM (64-bit) (June 3, 2023)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 

@@ -1,6 +1,6 @@
 #!/usr/bin/env wolframscript
 
-$appName = "LieARTCharacters";
+$appName = "LieACh";
 $icon = MemberQ[
   Rest@$ScriptCommandLine,
   _String?(StringMatchQ["-i" | "--icon"])

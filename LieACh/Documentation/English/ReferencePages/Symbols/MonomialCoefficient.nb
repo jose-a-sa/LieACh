@@ -29,7 +29,7 @@ Cell[TextData[{
   RowBox[{
    ButtonBox["MonomialCoefficient",
     BaseStyle->"Link",
-    ButtonData->"paclet:LieARTCharacters/ref/MonomialCoefficient"], "[", 
+    ButtonData->"paclet:LieACh/ref/MonomialCoefficient"], "[", 
    RowBox[{
     StyleBox["expr", "TI"], ",", 
     StyleBox["vars", "TI"], ",", 
@@ -70,7 +70,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["MonomialCoefficient",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/MonomialCoefficient"]], 
+   ButtonData->"paclet:LieACh/ref/MonomialCoefficient"]], 
   "InlineFormula",
   FormatType->StandardForm,ExpressionUUID->
   "f1b2e8f4-4a89-410c-8c28-9725df24af13"],
@@ -208,10 +208,10 @@ Cell[CellGroupData[{
 Cell["Related Guides", "MoreAboutSection",
  CellID->687391775,ExpressionUUID->"57799c2c-f8ac-46d2-9301-0b4f3526a6e4"],
 
-Cell[TextData[ButtonBox["LieARTCharacters: Lie algebra character \
+Cell[TextData[ButtonBox["LieACh: Lie algebra character \
 representations",
  BaseStyle->"Link",
- ButtonData->"paclet:LieARTCharacters/guide/LieARTCharacters"]], "MoreAbout",
+ ButtonData->"paclet:LieACh/guide/LieACh"]], "MoreAbout",
  CellChangeTimes->{3.9049197318281393`*^9},
  CellID->1679025212,ExpressionUUID->"a8690c83-2990-4631-ac33-9a7652a0939c"]
 }, Open  ]],
@@ -256,7 +256,7 @@ Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]],
  CellID->615992734,ExpressionUUID->"abfd72e9-8f31-4a8e-89f5-7a9e961fc55e"],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<LieARTCharacters`\>\"", 
+ RowBox[{"Needs", "[", "\"\<LieACh`\>\"", 
   "]"}]], "ExampleInitialization",
  CellChangeTimes->{{3.90446151907341*^9, 3.904461519486895*^9}},
  CellID->2118701798,ExpressionUUID->"02451f9e-e216-4d0e-ab57-d1363812cd43"]
@@ -409,7 +409,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["MonomialCoefficient",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/MonomialCoefficient"]], 
+   ButtonData->"paclet:LieACh/ref/MonomialCoefficient"]], 
   "InlineFormula",ExpressionUUID->"5c11e3d5-e472-4b4a-b967-c98dfcc0d88d"],
  " is effectively equivalent to:"
 }], "ExampleText",
@@ -560,15 +560,15 @@ Cell["Symbol", "Categorization",
  CellLabel->"Entity Type",
  CellID->43285850,ExpressionUUID->"0b6013d1-dee6-456a-95ca-9c4d5d4da85b"],
 
-Cell["LieARTCharacters", "Categorization",
+Cell["LieACh", "Categorization",
  CellLabel->"Paclet Name",
  CellID->860957189,ExpressionUUID->"1be69433-0408-4286-b2a5-8427186b7dbb"],
 
-Cell["LieARTCharacters`", "Categorization",
+Cell["LieACh`", "Categorization",
  CellLabel->"Context",
  CellID->362662037,ExpressionUUID->"49ca98d4-a7c4-4d5e-92b8-1e8f33684ee6"],
 
-Cell["LieARTCharacters/ref/MonomialCoefficient", "Categorization",
+Cell["LieACh/ref/MonomialCoefficient", "Categorization",
  CellLabel->"URI",
  CellID->702265673,ExpressionUUID->"6ae94cd2-a2fa-44c0-a96a-02e680b00e40"]
 }, Closed]],
@@ -607,7 +607,7 @@ Cell[BoxData[""], "Template",
 },
 WindowSize->{854, 1387},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-TaggingRules-><|"Paclet" -> "LieARTCharacters"|>,
+TaggingRules-><|"Paclet" -> "LieACh"|>,
 CellContext->"Global`",
 FrontEndVersion->"13.3 for Mac OS X ARM (64-bit) (June 3, 2023)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 

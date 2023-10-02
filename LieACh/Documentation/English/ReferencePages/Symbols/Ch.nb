@@ -29,7 +29,7 @@ Cell[TextData[{
   RowBox[{
    ButtonBox["Ch",
     BaseStyle->"Link",
-    ButtonData->"paclet:LieARTCharacters/ref/Ch"], "[", 
+    ButtonData->"paclet:LieACh/ref/Ch"], "[", 
    StyleBox["irrep", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
   "7d56abd3-c5ba-4d11-80fb-520335b405d6"],
  "\[LineSeparator]returns a pure function representing the character of ",
@@ -42,7 +42,7 @@ Cell[TextData[{
   RowBox[{
    ButtonBox["Ch",
     BaseStyle->"Link",
-    ButtonData->"paclet:LieARTCharacters/ref/Ch"], "[", 
+    ButtonData->"paclet:LieACh/ref/Ch"], "[", 
    RowBox[{
     StyleBox["algebra", "TI"], ",", " ", 
     StyleBox["list", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
@@ -60,7 +60,7 @@ Cell[TextData[{
   RowBox[{
    ButtonBox["Ch",
     BaseStyle->"Link",
-    ButtonData->"paclet:LieARTCharacters/ref/Ch"], "[", 
+    ButtonData->"paclet:LieACh/ref/Ch"], "[", 
    StyleBox["list", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
   "7bdc3ce3-00a2-43dc-b930-daf93d133da6"],
  "\[LineSeparator]returns character ",
@@ -75,7 +75,7 @@ Cell[TextData[{
   RowBox[{
    ButtonBox["Ch",
     BaseStyle->"Link",
-    ButtonData->"paclet:LieARTCharacters/ref/Ch"], "[", 
+    ButtonData->"paclet:LieACh/ref/Ch"], "[", 
    RowBox[{"IrrepTimes", "[", 
     RowBox[{
      StyleBox["a", "TI"], ",", 
@@ -95,7 +95,7 @@ Cell[TextData[{
   RowBox[{
    ButtonBox["Ch",
     BaseStyle->"Link",
-    ButtonData->"paclet:LieARTCharacters/ref/Ch"], "[", 
+    ButtonData->"paclet:LieACh/ref/Ch"], "[", 
    RowBox[{"IrrepPlus", "[", 
     RowBox[{
      SubscriptBox[
@@ -181,7 +181,7 @@ Cell[TextData[{
   RowBox[{
    ButtonBox["Ch",
     BaseStyle->"Link",
-    ButtonData->"paclet:LieARTCharacters/ref/Ch"], "[", 
+    ButtonData->"paclet:LieACh/ref/Ch"], "[", 
    StyleBox["irrep", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
   "7e350faf-f6cb-465b-bf5e-76f8191d2c30"],
  " computes the character of ",
@@ -243,7 +243,7 @@ Cell[TextData[{
    RowBox[{
     ButtonBox["Ch",
      BaseStyle->"Link",
-     ButtonData->"paclet:LieARTCharacters/ref/Ch"], "[", 
+     ButtonData->"paclet:LieACh/ref/Ch"], "[", 
     StyleBox["irrep", "TI"], "]"}], "[", 
    SubscriptBox[
     SubscriptBox[
@@ -269,14 +269,14 @@ Cell[TextData[{
   RowBox[{
    ButtonBox["Ch",
     BaseStyle->"Link",
-    ButtonData->"paclet:LieARTCharacters/ref/Ch"], "[", 
+    ButtonData->"paclet:LieACh/ref/Ch"], "[", 
    StyleBox["irrep", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
   "ca62f444-6edc-446b-a2cc-a4f337c30731"],
  " is stored in the definition of ",
  Cell[BoxData[
   ButtonBox["Ch",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/Ch"]], "InlineFormula",
+   ButtonData->"paclet:LieACh/ref/Ch"]], "InlineFormula",
   ExpressionUUID->"4f80234f-849b-44b5-86b7-cc867f31df09"],
  " after the first computation. Set ",
  Cell[BoxData["$SaveCharacterDefinitions"], "InlineFormula",
@@ -324,7 +324,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["FugacityMap",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/FugacityMap"]], 
+   ButtonData->"paclet:LieACh/ref/FugacityMap"]], 
   "InlineSeeAlsoFunction",
   TaggingRules->{"PageType" -> "Function"},
   CellTags->"c1465c2b-c054-431e-a250-0c11a5b99cd0",ExpressionUUID->
@@ -403,10 +403,10 @@ Cell[CellGroupData[{
 Cell["Related Guides", "MoreAboutSection",
  CellID->1120473792,ExpressionUUID->"c51f39dc-8ec5-41df-8bea-7dbb51602b0f"],
 
-Cell[TextData[ButtonBox["LieARTCharacters: Lie algebra character \
+Cell[TextData[ButtonBox["LieACh: Lie algebra character \
 representations",
  BaseStyle->"Link",
- ButtonData->"paclet:LieARTCharacters/guide/LieARTCharacters"]], "MoreAbout",
+ ButtonData->"paclet:LieACh/guide/LieACh"]], "MoreAbout",
  CellChangeTimes->{{3.9049190970773907`*^9, 3.9049191068209143`*^9}},
  CellID->518921601,ExpressionUUID->"a2f41755-f169-47d8-9f52-82d1bb63102c"],
 
@@ -457,7 +457,7 @@ Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]],
  CellID->1111467692,ExpressionUUID->"4d53ad1d-f937-4e0d-95ce-3c5ec85b5345"],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<LieARTCharacters`\>\"", 
+ RowBox[{"Needs", "[", "\"\<LieACh`\>\"", 
   "]"}]], "ExampleInitialization",
  CellChangeTimes->{{3.904467758054328*^9, 3.904467759460291*^9}},
  CellID->1624737838,ExpressionUUID->"7a5a8287-e7dc-4203-8ba4-c45229345622"]
@@ -484,7 +484,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["Ch",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/Ch"]], "InlineFormula",
+   ButtonData->"paclet:LieACh/ref/Ch"]], "InlineFormula",
   FormatType->StandardForm,ExpressionUUID->
   "f2631f7d-6e9a-4e92-b1bf-0edfb4efd656"],
  " to any ",
@@ -1125,7 +1125,7 @@ RowBox[{\\\"\\\\\\\"(11)\\\\\\\"\\\", \\\",\\\", \
 RowBox[{RowBox[{\\\"Irrep\\\", \\\"[\\\", \\\"A\\\", \\\"]\\\"}], \\\"[\\\", \
 RowBox[{RowBox[{\\\"-\\\", \\\"1\\\"}], \\\",\\\", \\\"1\\\"}], \
 \\\"]\\\"}]}], \\\"]\\\"}]\\) is not a valid irrep.\"", 2, 59, 4, 
-   19524752561174820091, "Local", "LieARTCharacters`Ch"},
+   19524752561174820091, "Local", "LieACh`Ch"},
   "MessageTemplate2"]], "Message", "MSG",
  CellChangeTimes->{{3.9049301848911324`*^9, 3.9049301945176888`*^9}},
  CellLabel->"During evaluation of In[59]:=",
@@ -1397,7 +1397,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["Ch",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/Ch"]], "InlineFormula",
+   ButtonData->"paclet:LieACh/ref/Ch"]], "InlineFormula",
   FormatType->StandardForm,ExpressionUUID->
   "9e5c1664-6b77-458a-a7dc-061196c1ea20"],
  " is to save the definition of each computation for speed purposes. However, \
@@ -1496,15 +1496,15 @@ Cell["Symbol", "Categorization",
  CellLabel->"Entity Type",
  CellID->1948957452,ExpressionUUID->"242bf374-ce6b-4b32-b4ae-5d9558880399"],
 
-Cell["LieARTCharacters", "Categorization",
+Cell["LieACh", "Categorization",
  CellLabel->"Paclet Name",
  CellID->70103957,ExpressionUUID->"49930749-d5b2-499d-905c-17393366ed48"],
 
-Cell["LieARTCharacters`", "Categorization",
+Cell["LieACh`", "Categorization",
  CellLabel->"Context",
  CellID->1416166743,ExpressionUUID->"528a71c9-c4bb-4220-b901-0d8e0b983eb8"],
 
-Cell["LieARTCharacters/ref/Ch", "Categorization",
+Cell["LieACh/ref/Ch", "Categorization",
  CellLabel->"URI",
  CellID->953189900,ExpressionUUID->"8ab3d82d-392c-4e55-aa2b-3fa448cacc20"]
 }, Closed]],
@@ -1539,7 +1539,7 @@ Cell[BoxData[""], "Template",
 },
 WindowSize->{854, 1387},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-TaggingRules-><|"Paclet" -> "LieARTCharacters"|>,
+TaggingRules-><|"Paclet" -> "LieACh"|>,
 CellContext->"Global`",
 CommonDefaultFormatTypes->{"Output"->StandardForm},
 FrontEndVersion->"13.3 for Mac OS X ARM (64-bit) (June 3, 2023)",

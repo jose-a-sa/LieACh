@@ -83,4 +83,4 @@ Import[$LieARTmodFile];
 Remove[{$LieARTmodFile}];
 
 
-Get["LieARTCharacters`LieARTCharacters`"]
+Get["LieACh`LieACh`"]

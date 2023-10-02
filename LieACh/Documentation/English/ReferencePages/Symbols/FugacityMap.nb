@@ -29,7 +29,7 @@ Cell[TextData[{
   RowBox[{
    ButtonBox["FugacityMap",
     BaseStyle->"Link",
-    ButtonData->"paclet:LieARTCharacters/ref/FugacityMap"], "[", 
+    ButtonData->"paclet:LieACh/ref/FugacityMap"], "[", 
    RowBox[{
     StyleBox["algebra", "TI"], ",", " ", 
     StyleBox["subalgebra", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
@@ -130,7 +130,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["CharacterDecomposition",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/CharacterDecomposition"]], 
+   ButtonData->"paclet:LieACh/ref/CharacterDecomposition"]], 
   "InlineSeeAlsoFunction",
   TaggingRules->{"PageType" -> "Function"},
   CellTags->"b93f00f0-e198-468f-92fd-ebdf323aaf49",ExpressionUUID->
@@ -200,10 +200,10 @@ Cell[CellGroupData[{
 Cell["Related Guides", "MoreAboutSection",
  CellID->1256796023,ExpressionUUID->"9534c0c1-4700-48a7-a1e0-1422e4cb82fe"],
 
-Cell[TextData[ButtonBox["LieARTCharacters: Lie algebra character \
+Cell[TextData[ButtonBox["LieACh: Lie algebra character \
 representations",
  BaseStyle->"Link",
- ButtonData->"paclet:LieARTCharacters/guide/LieARTCharacters"]], "MoreAbout",
+ ButtonData->"paclet:LieACh/guide/LieACh"]], "MoreAbout",
  CellChangeTimes->{{3.904918794393367*^9, 3.904918804525996*^9}},
  CellID->1950092976,ExpressionUUID->"6b2ae511-4163-4d8b-85a5-834e456a70ad"],
 
@@ -256,7 +256,7 @@ Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]],
  CellID->1610218467,ExpressionUUID->"3a3697bb-b1dd-4b05-90d2-15775df5dd4c"],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<LieARTCharacters`\>\"", 
+ RowBox[{"Needs", "[", "\"\<LieACh`\>\"", 
   "]"}]], "ExampleInitialization",
  CellID->352855375,ExpressionUUID->"395463c3-6351-491f-91d7-6dae0b580e2e"]
 }, Open  ]],
@@ -607,15 +607,15 @@ Cell["Symbol", "Categorization",
  CellLabel->"Entity Type",
  CellID->766332305,ExpressionUUID->"2057de53-f298-4202-acad-a88be6ccc5f3"],
 
-Cell["LieARTCharacters", "Categorization",
+Cell["LieACh", "Categorization",
  CellLabel->"Paclet Name",
  CellID->32411143,ExpressionUUID->"a9d3f488-ae6c-42f6-8e00-bf2bf79593c7"],
 
-Cell["LieARTCharacters`", "Categorization",
+Cell["LieACh`", "Categorization",
  CellLabel->"Context",
  CellID->1420717710,ExpressionUUID->"d90ab789-fdb7-4cf8-b750-0e8210dfbaea"],
 
-Cell["LieARTCharacters/ref/FugacityMap", "Categorization",
+Cell["LieACh/ref/FugacityMap", "Categorization",
  CellLabel->"URI",
  CellID->131880977,ExpressionUUID->"3f852e04-9828-4583-96da-b0df0f9f6227"]
 }, Closed]],
@@ -654,7 +654,7 @@ Cell[BoxData[""], "Template",
 },
 WindowSize->{854, 1387},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-TaggingRules-><|"Paclet" -> "LieARTCharacters", "TryRealOnly" -> False|>,
+TaggingRules-><|"Paclet" -> "LieACh", "TryRealOnly" -> False|>,
 CellContext->"Global`",
 CommonDefaultFormatTypes->{"Output"->StandardForm},
 FrontEndVersion->"13.3 for Mac OS X ARM (64-bit) (June 3, 2023)",

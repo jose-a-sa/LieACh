@@ -2,10 +2,10 @@
 
 (* Wolfram Language Package *)
 
-Unprotect["LieARTCharacters`*"];
-ClearAll["LieARTCharacters`*"];
+Unprotect["LieACh`*"];
+ClearAll["LieACh`*"];
 
-BeginPackage["LieARTCharacters`", {"LieART`"}]
+BeginPackage["LieACh`", {"LieART`"}]
 
 Ch::usage = 
 "Ch[irrep] returns a pure function representing the character of irrep.\

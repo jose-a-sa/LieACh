@@ -20,7 +20,7 @@ WindowFrame->Normal*)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["LieARTCharacters: Lie algebra character representations", "GuideTitle",
+Cell["LieACh: Lie algebra character representations", "GuideTitle",
  CellChangeTimes->{{3.904918707636088*^9, 3.90491871101328*^9}, {
   3.904918757987937*^9, 3.904918776763563*^9}},
  CellID->1900941908,ExpressionUUID->"f3f2c844-c407-4902-8f3c-cab46c9a773c"],
@@ -55,7 +55,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["Ch",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/Ch"]], "InlineGuideFunction",
+   ButtonData->"paclet:LieACh/ref/Ch"]], "InlineGuideFunction",
   TaggingRules->{"PageType" -> "Function"},
   CellTags->"c40ac8e4-27e1-4161-a8df-4d4f38357a23",ExpressionUUID->
   "52ebf63d-14b7-42e0-9dd8-778a768879b1"],
@@ -76,7 +76,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["CharacterDecomposition",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/CharacterDecomposition"]], 
+   ButtonData->"paclet:LieACh/ref/CharacterDecomposition"]], 
   "InlineGuideFunction",
   TaggingRules->{"PageType" -> "Function"},
   CellTags->"c5c6736a-1ff4-4e4e-8fcf-2d9846cbae62",ExpressionUUID->
@@ -95,7 +95,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["FugacityMap",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/FugacityMap"]], 
+   ButtonData->"paclet:LieACh/ref/FugacityMap"]], 
   "InlineGuideFunction",
   TaggingRules->{"PageType" -> "Function"},
   CellTags->"895065fe-911c-4b90-a899-58cb7cc9af4c",ExpressionUUID->
@@ -119,7 +119,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["HighestWeightsFrom",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/HighestWeightsFrom"]], 
+   ButtonData->"paclet:LieACh/ref/HighestWeightsFrom"]], 
   "InlineGuideFunction",
   TaggingRules->{"PageType" -> "Function"},
   CellTags->"895065fe-911c-4b90-a899-58cb7cc9af4c",ExpressionUUID->
@@ -135,7 +135,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["HighestWeights",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/HighestWeights"]], 
+   ButtonData->"paclet:LieACh/ref/HighestWeights"]], 
   "InlineGuideFunction",
   TaggingRules->{"PageType" -> "Function"},
   CellTags->"895065fe-911c-4b90-a899-58cb7cc9af4c",ExpressionUUID->
@@ -150,7 +150,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["DominantWeightOrder",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/DominantWeightOrder"]], 
+   ButtonData->"paclet:LieACh/ref/DominantWeightOrder"]], 
   "InlineGuideFunction",
   TaggingRules->{"PageType" -> "Function"},
   CellTags->"895065fe-911c-4b90-a899-58cb7cc9af4c",ExpressionUUID->
@@ -172,7 +172,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["WeylGroupOrder",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/WeylGroupOrder"]], 
+   ButtonData->"paclet:LieACh/ref/WeylGroupOrder"]], 
   "InlineGuideFunction",
   TaggingRules->{"PageType" -> "Function"},
   CellTags->"895065fe-911c-4b90-a899-58cb7cc9af4c",ExpressionUUID->
@@ -194,7 +194,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["MonomialCoefficient",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/MonomialCoefficient"]], 
+   ButtonData->"paclet:LieACh/ref/MonomialCoefficient"]], 
   "InlineGuideFunction",
   TaggingRules->{"PageType" -> "Function"},
   CellTags->"895065fe-911c-4b90-a899-58cb7cc9af4c",ExpressionUUID->
@@ -266,16 +266,16 @@ Cell["Guide", "Categorization",
  CellLabel->"Entity Type",
  CellID->1547944386,ExpressionUUID->"bb016a59-7f8a-43b4-b4c8-e45cbec05b72"],
 
-Cell["LieARTCharacters", "Categorization",
+Cell["LieACh", "Categorization",
  CellLabel->"Paclet Name",
  CellID->1684395744,ExpressionUUID->"6ec4a1a2-980a-4faf-a4f4-ac7dab4c2841"],
 
-Cell["LieARTCharacters`", "Categorization",
+Cell["LieACh`", "Categorization",
  CellLabel->"Context",
  CellID->1509834654,ExpressionUUID->"1e401cf9-2250-4343-b3ef-10dcb9e70da0"],
 
 Cell["\<\
-LieARTCharacters/guide/LieARTCharactersLieARTextensionforcharacters\
+LieACh/guide/LieAChLieARTextensionforcharacters\
 \>", "Categorization",
  CellLabel->"URI",
  CellID->1124256826,ExpressionUUID->"73d4722f-da16-4dad-9a1f-499d5fb6d6b5"]
@@ -293,7 +293,7 @@ Cell["XXXX", "Keywords",
 },
 WindowSize->{958, 897},
 WindowMargins->{{Automatic, 593}, {Automatic, 154}},
-TaggingRules-><|"Paclet" -> "LieARTCharacters"|>,
+TaggingRules-><|"Paclet" -> "LieACh"|>,
 FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (January 30, 2023)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "GuidePageStylesExt.nb", 
   CharacterEncoding -> "UTF-8"],

@@ -29,7 +29,7 @@ Cell[TextData[{
   RowBox[{
    ButtonBox["WeylGroupOrder",
     BaseStyle->"Link",
-    ButtonData->"paclet:LieARTCharacters/ref/WeylGroupOrder"], "[", 
+    ButtonData->"paclet:LieACh/ref/WeylGroupOrder"], "[", 
    StyleBox["algebra", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
   "6b6b408b-e67c-457c-a035-5c324842087b"],
  "\[LineSeparator]returns the number of elements in the finite Weyl group of ",
@@ -166,7 +166,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["Ch",
    BaseStyle->"Link",
-   ButtonData->"paclet:LieARTCharacters/ref/Ch"]], "InlineSeeAlsoFunction",
+   ButtonData->"paclet:LieACh/ref/Ch"]], "InlineSeeAlsoFunction",
   TaggingRules->{"PageType" -> "Function"},ExpressionUUID->
   "eadd6be8-b736-4418-b54b-823d73191f1c"],
  StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
@@ -241,10 +241,10 @@ Cell[CellGroupData[{
 Cell["Related Guides", "MoreAboutSection",
  CellID->574418505,ExpressionUUID->"3c926873-e629-4c55-b63a-654912093b51"],
 
-Cell[TextData[ButtonBox["LieARTCharacters: Lie algebra character \
+Cell[TextData[ButtonBox["LieACh: Lie algebra character \
 representations",
  BaseStyle->"Link",
- ButtonData->"paclet:LieARTCharacters/guide/LieARTCharacters"]], "MoreAbout",
+ ButtonData->"paclet:LieACh/guide/LieACh"]], "MoreAbout",
  CellChangeTimes->{3.9049188481989202`*^9, 3.904919110121786*^9},
  CellID->1865811698,ExpressionUUID->"9f53ce10-e0d0-41c4-9da3-bc05e54190fb"],
 
@@ -295,7 +295,7 @@ Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]],
  CellID->209423709,ExpressionUUID->"3fd7daad-c3ef-43f9-9b73-be661009e6c3"],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<LieARTCharacters`\>\"", 
+ RowBox[{"Needs", "[", "\"\<LieACh`\>\"", 
   "]"}]], "ExampleInitialization",
  CellID->58579730,ExpressionUUID->"1cfceae8-ff98-4e00-a2c0-c029fbb4d9aa"]
 }, Open  ]],
@@ -505,15 +505,15 @@ Cell["Symbol", "Categorization",
  CellLabel->"Entity Type",
  CellID->658250172,ExpressionUUID->"4fcd0707-fe25-4757-839f-0349c362425c"],
 
-Cell["LieARTCharacters", "Categorization",
+Cell["LieACh", "Categorization",
  CellLabel->"Paclet Name",
  CellID->544058728,ExpressionUUID->"eeb6b529-4569-4f9e-91f7-0f61eff29f64"],
 
-Cell["LieARTCharacters`", "Categorization",
+Cell["LieACh`", "Categorization",
  CellLabel->"Context",
  CellID->9672570,ExpressionUUID->"8210920e-1b30-49ac-8573-e4c3f6e57268"],
 
-Cell["LieARTCharacters/ref/WeylGroupOrder", "Categorization",
+Cell["LieACh/ref/WeylGroupOrder", "Categorization",
  CellLabel->"URI",
  CellID->1505610465,ExpressionUUID->"673fa658-cf21-4b30-8a61-30cdc35668f0"]
 }, Closed]],
@@ -552,7 +552,7 @@ Cell[BoxData[""], "Template",
 },
 WindowSize->{854, 1387},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-TaggingRules-><|"Paclet" -> "LieARTCharacters"|>,
+TaggingRules-><|"Paclet" -> "LieACh"|>,
 CellContext->"Global`",
 CommonDefaultFormatTypes->{"Output"->StandardForm},
 FrontEndVersion->"13.3 for Mac OS X ARM (64-bit) (June 3, 2023)",
