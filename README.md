@@ -16,7 +16,7 @@ updateLieACh[] := Module[{json, entry, download, target},
     download = Lookup[First@Lookup[entry, "assets"], "browser_download_url"];
     target = FileNameJoin[{CreateDirectory[], "LieACh.paclet"}];
     If[$Notebooks, PrintTemporary@Labeled[ProgressIndicator[Appearance -> "Necklace"], 
-      "Downloading LieACh...", Right], Print["Downloading..."]];
+      "Downloading LieACh...", Right], Print["Downloading LieACh..."]];
     URLSave[download, target], Return[$Failed]
   ];
   If[FileExistsQ[target], PacletManager`PacletInstall[target, ForceVersionInstall->True], $Failed]
