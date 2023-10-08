@@ -1,8 +1,9 @@
+<img align="right" src="LieACh/icon/icon-128.svg" markdown="1">
+
 # LieACh
 
-Package that extends LieART for the use of 1-dimensional representations of Lie algebras, i.e. characters.
+Package that extends LieART for the use of 1-dimensional representations of Lie algebras, i.e. characters. 
 It is able to find the decomposition of 1-dim representations into characters of irreducible representations.
-
 
 ## Installation
 
