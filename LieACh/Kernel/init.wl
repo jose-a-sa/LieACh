@@ -34,7 +34,7 @@ installLieART[version_String] :=
         PrintTemporary@Labeled[ProgressIndicator[Appearance->"Necklace"], "Downloading LieART...", Right],
         Print["Downloading LieART..."]
       ];
-      URLSave[download,target],
+      URLDownload[download,target],
       Return[$Failed]
     ];
     If[FileExistsQ[target],
@@ -70,8 +70,8 @@ installLieART[version_String] :=
 
 
 $LieARTmodFile = FileNameJoin[{DirectoryName[$InputFileName, 2], "LieARTMod.wl"}];
-If[ !FileExistsQ[$LieARTmodFile],
-  tAbort["Failed to find LieARTMod.wl"]; Abort[]
+If[!FileExistsQ[$LieARTmodFile],
+  Message[Import::nffil, $LieARTmodFile, "kernel verification step"]; Abort[]
 ];
 
 (* LieART install/download *)
