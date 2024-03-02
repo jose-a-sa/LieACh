@@ -3,7 +3,7 @@ message: "If you use this software, please cite it as below."
 authors:
 - family-names: "Sá"
   given-names: "José"
-title: "QuiverGaugeTheory: a Mathematica package for 4d $\mathcal{N}=1$ quiver gauge theories"
+title: "QuiverGaugeTheory: a Mathematica package for 4d N=1 quiver gauge theories"
 version: 2.0.4
 doi: 10.5281/zenodo.1234
 date-released: 2023-10-9
